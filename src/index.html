@@ -1,15 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Little Secrets</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Start Header-->
+    <header id="header">
+        <div class="nav-bar">
+                 <a class="app-logo" href="index.html"><img src="img/logo-white.png"></a>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <content>
+        <section id="intro" class="bg-intro">
+            <div class="intro-title text-white">
+                <h1>Bienvenida a Little Secrets</h1>
+                <h2>Una aplicación <strong>solo para chicas</strong>  en donde contar secretos ¡nunca fue tan divertido!</h2>
+                <button class="btn btn-intro">Comenzar</button>
+            </div>
+        </section>
+
+        <section id="bienvenida">
+            <div>
+                <h3>Bienvenido a Little Secrets</h3>
+                <p>(Sobre de qué trata)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+        <section id="intrucciones">
+            <div>
+                <h3>Instrucciones</h3>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</li>
+            </div>
+        </section>
+
+        <section id="codificar">
+            <div>
+                <h3>comenzemos a contar secretos</h3>
+                <input type="number" id="user-offset" placeholder="ingresa tu número clave">
+                <input type="text" id="user-message" placeholder="Ingresa tu mensaje">
+            </div>         
+            <div>
+                <button id="btn-encode" class="btn">Encriptar</button>
+                <button id="btn-clean" class="btn">Limpiar</button>
+                <button id="btn-decode" class="btn">Desencriptar</button>
+            </div>
+            <br>
+         </section>
+
+         <section id="mensaje-convertido">
+             <p>El resultado del mensaje es:</p>
+             <p id="final-message"> </p>
+             <br>
+         </section>
+
+    </content>
+    <!--Start Footer-->
+    <footer>
+        <div class="img-footer">
+                <a class="app-logo" href="index.html"><img src="img/logo-white.png"></a>
+        </div>
+        <div class="footer-links text-white">
+            <ul>
+                <li><a href="#bienvenida">Little Secrets</a></li>
+                <li><a href="#intrucciones">Instrucciones</a></li>
+                <li><a href="#codificar">Codificar Mensaje</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <footer class="copyright">
+        <p class="text-white">Copyright © Little Secrets 2019 - Realizado por fernandabelenVL</p>
+    </footer>
+    <!--End Footer-->
+
+
+
     <script src="index.js"></script>
-  </body>
+    <script src="cipher.js"></script>
+</body>
 </html>
