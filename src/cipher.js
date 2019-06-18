@@ -12,10 +12,10 @@ window.cipher = {
          
       //condiciono si la letra está entre el espacio 65 y 90 que corresponde de la A a la Z y si es true aplico la fórmula
       if (positionAscii >= 65 && positionAscii <= 90){
-        let cifrado = positionAscii - 65 + offset % 26 + 65;
+        let textEncode = positionAscii - 65 + offset % 26 + 65;
         //El método .String transforma en string cada número
         // al poner += concateno cada string del nuevo arreglo
-        newMessage += String.fromCharCode(cifrado);
+        newMessage += String.fromCharCode(textEncode);
       }
 
       //integrar espacio
@@ -25,8 +25,8 @@ window.cipher = {
 
       //integrar números
       else if (positionAscii >= 48 && positionAscii <= 57){
-        let cifrado = positionAscii- 48 + offset % 10 + 48;
-        newMessage += String.fromCharCode(cifrado);
+        let textEncode = positionAscii- 48 + offset % 10 + 48;
+        newMessage += String.fromCharCode(textEncode);
       }          
     }
     //console.log(newMessage)
@@ -42,8 +42,8 @@ window.cipher = {
 
             //letras mayúsculas
             if (positionAscii >= 65 && positionAscii <= 90 ){
-              let descifrado = (positionAscii - 90 - offset) % 26 + 90;
-              newMessage += String.fromCharCode(descifrado);
+              let textDecode = (positionAscii - 90 - offset) % 26 + 90;
+              newMessage += String.fromCharCode(textDecode);
             }
 
             //espacio
@@ -53,8 +53,8 @@ window.cipher = {
 
              //numeros
             else if (positionAscii >= 48 && positionAscii <= 57){
-            let descifrado = (positionAscii - 57 - offset) %10 + 57;
-            newMessage += String.fromCharCode(descifrado);
+            let textDecode = (positionAscii - 57 - offset) %10 + 57;
+            newMessage += String.fromCharCode(textDecode);
              }          
       }
       return newMessage;     

@@ -46,12 +46,15 @@
         <section id="codificar">
             <div>
                 <h3>comenzemos a contar secretos</h3>
-                <input type="number" id="user-offset" placeholder="ingresa tu número clave">
-                <input type="text" id="user-message" placeholder="Ingresa tu mensaje">
+                <form>
+                    <input type="number" id="user-offset" placeholder="ingresa tu número clave">
+                    <input type="text" id="user-message" placeholder="Ingresa tu mensaje">
+                    <input type="reset" id="hide-result" value="Borrar texto">
+                </form>
             </div>         
             <div>
                 <button id="btn-encode" class="btn">Encriptar</button>
-                <button id="btn-clean" class="btn">Limpiar</button>
+                <!--<button id="btn-clean" class="btn">Limpiar</button>-->
                 <button id="btn-decode" class="btn">Desencriptar</button>
             </div>
             <br>
