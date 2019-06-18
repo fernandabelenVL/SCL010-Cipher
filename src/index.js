@@ -3,14 +3,11 @@
 let btnEncode = document.getElementById('btn-encode');
     btnEncode.addEventListener('click', () => {
         //guardo los valores de los input de mensaje y offset
-        window.message = document.getElementById('user-message').value;
-        //convierto mensaje a mayúsucula
-        window.message = message.toUpperCase ();
-        window.offset = document.getElementById('user-offset').value;
+        message = document.getElementById('user-message').value;
+        offset = parseInt(document.getElementById('user-offset').value);
 
         //imprimo valor de encode en html
-        let newMessage = cipher.encode(offset,message);
-        document.getElementById('final-message').innerHTML = newMessage;
+        document.getElementById('final-message').innerHTML = cipher.encode(offset, message);
         //mostrar nuevamente el resultado después de borrarlo
         document.getElementById('final-message').style.display = 'block'
 
@@ -19,12 +16,10 @@ let btnEncode = document.getElementById('btn-encode');
 
 let btnDecode = document.getElementById("btn-decode");
     btnDecode.addEventListener('click', () => {
-        window.message = document.getElementById('user-message').value;
-        window.offset = document.getElementById('user-offset').value;
-        window.message = message.toUpperCase ();
+        message = document.getElementById('user-message').value;
+        offset = document.getElementById('user-offset').value;
 
-        let newMessage = cipher.decode(offset,message);
-        document.getElementById('final-message').innerHTML = newMessage;
+        document.getElementById('final-message').innerHTML = cipher.decode(offset,message);
         document.getElementById('final-message').style.display = 'block'
 
     });
