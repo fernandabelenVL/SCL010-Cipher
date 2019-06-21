@@ -5,92 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Little Secrets</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!--Start Header-->
-    <header id="header">
-        <div class="nav-bar">
-                 <a class="app-logo" href="index.html"><img src="img/logo-white.png"></a>
+    <header>
+        <div class="app-logo">
+            <a href="index.html"><img src="img/logo-white.png"></a>
         </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#bienvenida">Sobre Little Secrets</a>
+            <a href="#intrucciones">Instrucciones</a>
+            <a href="#codificar">Cifrar y Descifrar mensaje</a>
+        </nav>
     </header>
     <!--End Header-->
 
-    <content>
+    <!--Start Slide-->
         <section id="intro" class="bg-intro">
             <div class="intro-title text-white">
                 <h1>Bienvenida a Little Secrets</h1>
                 <h2>Una aplicación <strong>solo para chicas</strong>  en donde contar secretos ¡nunca fue tan divertido!</h2>
-                <button class="btn btn-intro">Comenzar</button>
+                <a href="#codificar" class="btn btn-intro">Comenzar</a>
             </div>
         </section>
+    <!--End Slide-->
+    
+    <!--Start Content-->
+    <div class="contenedor">
+        <main>
 
         <section id="bienvenida">
-            <div>
-                <h3>Bienvenido a Little Secrets</h3>
-                <p>Bienvenidos a Little Secrets, una aplicación que te permitirá crear mensajes secretos para enviar a tus amigas.
-                    <br>En ella podrás escribir un mensaje en clave y también decodificar los mensajes que te envíen, así todo quedará entre las personas que quieras.
-                    <br>Para comenzar necesitas un “número clave” el que servirá tanto para enviar como para recibir tu mensaje secreto, este número clave creará un mensaje en código y para que tu amiga lo pueda leer necesita el mismo número para descodificarlo, así que es importante que se pongan de acuerdo cuál es el número que usarán para contar sus secretos.
+            <div class="titulo">
+            <h3>Bienvenido a Little Secrets</h3>
+            <h4>Mensajes secretos entre amigas</h4>
+            </div>
+            <div class="content">
+                <img class="img-left" src="img/ima1.png">
+                <p>Bienvenidos a <strong>Little Secrets</strong>, una aplicación que te permitirá crear mensajes secretos para enviar a tus amigas.
+                <br><br>En ella podrás escribir un mensaje en clave y también decodificar los mensajes que te envíen, así todo quedará entre las personas que quieras.
+                <br><br>Para comenzar necesitas un “número clave” el que servirá tanto para enviar como para recibir tu mensaje secreto, este número clave creará un mensaje en código y para que tu amiga lo pueda leer necesita el mismo número para descodificarlo, así que es importante que se pongan de acuerdo cuál es el número que usarán para contar sus secretos.
                 </p>
             </div>
         </section>
 
         <section id="intrucciones">
-            <div>
+            <div class="titulo">
                 <h3>Instrucciones</h3>
-                <li>1. Ingresa un número que funcionará de "clave" para codificar o decodificar tu mensaje.</li>
-                <li>2. Escribe el mensaje que quieres que sea secreto, o ingresa el mensaje que quieres descodificar.</li>
-                <li>3. Haz click en los botones "Codificar" o "Decodificar" para mostrar el resultado de tu mensaje.</li>
-                <li>¡Y ya está! ya tienes el resultado de tu mensaje secreto, ahora solo queda copiarlo para enviárselo a tus amigas.</li>
+                <h4>Aprende a enviar y recibir mensajes secretos</h4>
+            </div>
+            <div class="content">
+                <p><strong>1.</strong> Ingresa un número que funcionará de "clave" para codificar o decodificar tu mensaje.
+                <br><br><strong>2.</strong> Escribe el mensaje que quieres que sea secreto, o ingresa el mensaje que quieres descodificar.
+                <br><br><strong>3.</strong> Haz click en los botones "Codificar" o "Decodificar" para mostrar el resultado de tu mensaje.
+                <br><br>¡Y ya está! ya tienes el resultado de tu mensaje secreto, ahora solo queda copiarlo para enviárselo a tus amigas.</p>
+                <img class="img-right" src="img/ima2.png">
             </div>
         </section>
 
         <section id="codificar">
             <div>
-                <h3>comenzemos a contar secretos</h3>
-                <form>
-                    <input type="number" id="user-offset" placeholder="ingresa tu número clave">
-                    <input type="text" id="user-message" placeholder="Ingresa tu mensaje">
-                    <input type="reset" id="hide-result" value="Borrar texto">
+                <div class="titulo">
+                    <h3>Comenzemos a contar secretos</h3>
+                    <h4>Cifra o descifra un mensaje</h4>
+                </div>
+                <form class="form-codificar"> 
+                    <label for="user-offset">Número clave</label>
+                    <input type="number" id="user-offset" placeholder="Número">
+                    <label for="user-message">Mensaje</label>
+                    <textarea name="" id="user-message" cols="30" rows="7" placeholder="Ingresa tu mensaje"></textarea>
+                    <input type="reset" id="hide-result" value="Borrar texto">        
                 </form>
             </div>         
             <div>
                 <button id="btn-encode" class="btn">Encriptar</button>
-                <!--<button id="btn-clean" class="btn">Limpiar</button>-->
+                    <!--<button id="btn-clean" class="btn">Limpiar</button>-->
                 <button id="btn-decode" class="btn">Desencriptar</button>
             </div>
             <br>
-         </section>
+        </section>
 
-         <section id="mensaje-convertido">
+         <section id="mensaje-convertido" class="botones-codificar">
              <p>El resultado del mensaje es:</p>
              <p id="final-message"> </p>
              <br>
          </section>
 
-    </content>
+        </main>
+     </div>
+    <!--End Content-->
+
     <!--Start Footer-->
     <footer>
         <div class="img-footer">
-                <a class="app-logo" href="index.html"><img src="img/logo-white.png"></a>
+            <a class="app-logo" href="index.html"><img src="img/logo-white.png"></a>
         </div>
-        <div class="footer-links text-white">
-            <ul>
-                <li><a href="#bienvenida">Little Secrets</a></li>
-                <li><a href="#intrucciones">Instrucciones</a></li>
-                <li><a href="#codificar">Codificar Mensaje</a></li>
-            </ul>
+        <div>
+            <p class="text-white">Copyright © Little Secrets 2019 - Realizado por fernandabelenVL</p>
         </div>
-
-    </footer>
-    <footer class="copyright">
-        <p class="text-white">Copyright © Little Secrets 2019 - Realizado por fernandabelenVL</p>
     </footer>
     <!--End Footer-->
-
-
 
     <script src="index.js"></script>
     <script src="cipher.js"></script>
