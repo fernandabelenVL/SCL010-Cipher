@@ -1,12 +1,17 @@
-html, body {
-    width: 100%;
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
-}
-body {
-    position: relative;
     text-align: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /*Flex*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,10 +27,27 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #402888;
+}
+
+h4{
+    font-weight: 100;
+    letter-spacing: normal;
+    color: grey;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 20px;
     margin-right: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
 }
 a{
     color: white;
@@ -38,6 +60,7 @@ a:hover{
 .text-white {
     color: white;
 }
+
 /*Buttons*/
 .btn {
     padding: 12px 30px;
@@ -54,46 +77,81 @@ a:hover{
     background: #402888;
     color: white;
     border: 1px solid #402888;
-    box-shadow: 5px 4px 20px #402888c4;
+    box-shadow: 0px 4px 10px #402888c4;
+    font-size: 10px;
 }
 .btn-intro:hover {
     background-color: #6747c7;
     border: 1px solid #6747c7;
     box-shadow: none;
+    color: #fff;
 }
 .btn-intro:active {
     background-color: #917bd4;
     border: 1px solid #917bd4;
     box-shadow: none;
+    color: #fff;
 }
 
-
 /*Header*/
-#header {
+header {
     position: sticky;
     left: 0;
     top: 0;
-    width: 100%;
+    width: auto;
     z-index: 99;
-    padding: 10px 0;
-    background: #6747C7;
+    padding: 20px;
+    background: #402888;
+    /*Flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.nav-bar{
-    width:100%;
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:auto;
-    margin-left:auto
+header nav {
+    width: 50%;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    /*Flex*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav a{
+    margin: 0 5px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background: #4a3293;
+    border-radius:30px;
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+header nav a:hover{
+    background: #6747C7;
+    color: #fff;
 }
 
 .app-logo img{
-    max-width: 150px;
+    max-width: 120px;
 }
 
+/*Main*/
+main{
+    overflow: hidden;
+}
 /*Intro*/
 #intro {
-    height: 500px;
+    height: 460px;
+    margin-bottom: 50px;
 }
 .bg-intro {
     background-image: url(img/bg-header.jpg);
@@ -104,7 +162,6 @@ a:hover{
     background-size: cover;
 }
 .intro-title {
-    text-align: left;
     max-width: 50%;
     position: relative;
     padding: 140px 0 0 105px;
@@ -116,35 +173,212 @@ a:hover{
     line-height: 27px;
 }
 
-/*Footer*/
-footer {
-    height: 100px;
-    width: 100%;
-    background: #6747C7;
+
+/* MAIN---------------------------------*/
+.titulo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.content{
+    margin: 20px;
+    align-items: center;
     display: flex;
+    flex-flow: row;
+}
+
+.content p {
+    text-align: left;
+    width: 50%
+}
+
+.content img {
+    max-width: 450px;
+    width: 50%;
+}
+
+.img-left {
+    margin-right: 30px;
+}
+
+.img-right {
+    margin-left: 30px;
+}
+
+
+/* Encode - Decode ----------------------------*/
+.form-codificar{
+    padding: 20px;
+    margin: 0 150px;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    color: #402888;
+}
+
+input , textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #6747c7;
+    outline: none;
+}
+
+input[type="reset"]{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+.btn-delete {
+    max-width: 300px;
+    width: 200px;
+    margin: 0;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    font-weight: 100;
+}
+.btn-delete:hover{
+    background: #868686;
+    color: #fff;
+} 
+
+.btn-code {
+    width: 250px;
+    margin: 0px;
+    background: #FFA923;
+    border: 1px #FFA923 solid;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-code:hover {
+    width: 40%;
+    margin: 0px;
+    background: #ffd56b;
+    border: 1px #ffd56b;
+}
+
+.result-message {
+    margin-top: 10px;
+    background: #f5f5f5;
+    margin: 0 170px;
+    overflow: hidden;
+}
+
+.titulo-nuevo-mensaje {
+    margin: 20px 10px;
+    color: #402888;
+    font-weight: 400;
+}
+
+/*Footer-----------------------------------------*/
+footer {
+    height: 80px;
+    width: auto;
+    background: #6747C7;
     align-items: center;  
     margin-top: 50px;
+    padding: 20px;
+    /*Flex*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
 }
 .img-footer {
-    padding-left: 20px;
     float: left;
+    margin-left: 20px;
+    max-width: 200px;
 }
-.copyright {
-    height: 50px;
-    margin: 0;
-    background: #402888;
-    display: inline-block;
-    font-size: 12px;
-}
-.footer-links{
-    margin-right: 0;
-    font-family: 'Open Sans', sans-serif;
+footer p {
     font-size: 12px;
 }
 
-.cuadrado {
-    width: 100px; 
-    height: 100px; 
-    background: #e5e5e5;
-    align-items: center;
+@media screen and (max-width: 1022px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .app-logo {
+        margin: 20px 0px;
+    }
+
+    header nav {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content{
+        flex-flow: column;
+    }
+    .content p {
+        width: 100%;
+        text-align: justify;
+    }
+    .content img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .content .img-left {
+        margin-bottom: 30px;
+    }
+
+    .img-right {
+        display: none;
+    }
+
+    footer {
+        width: auto;
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    } 
+    footer img{
+        margin-bottom: 15px;
+    } 
+
+    .form-codificar{
+        padding: 20px;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .btn-code {
+        width: 200px;
+    }
+
+    header nav a {
+        display: none;
+    } 
+    
 }

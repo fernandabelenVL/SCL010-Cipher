@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e7b4a9a03.js"></script>
 </head>
 <body>
 
@@ -78,22 +79,23 @@
                     <label for="user-offset">Número clave</label>
                     <input type="number" id="user-offset" placeholder="Número">
                     <label for="user-message">Mensaje</label>
-                    <textarea name="" id="user-message" cols="30" rows="7" placeholder="Ingresa tu mensaje"></textarea>
-                    <input type="reset" id="hide-result" value="Borrar texto">        
+                    <textarea id="user-message" cols="30" rows="7" placeholder="Ingresa tu mensaje" re></textarea>
+                    <button type="reset" id="hide-result" class="btn btn-delete"><i class="fas fa-trash-alt"></i> Borrar Texto</button>
                 </form>
             </div>         
             <div>
-                <button id="btn-encode" class="btn">Encriptar</button>
-                    <!--<button id="btn-clean" class="btn">Limpiar</button>-->
-                <button id="btn-decode" class="btn">Desencriptar</button>
+                <button id="btn-encode" class="btn btn-code"><i class="fas fa-lock"></i> Encriptar</button>
+                <button id="btn-decode" class="btn btn-code"><i class="fas fa-lock-open"></i> Desencriptar</button>
             </div>
             <br>
         </section>
 
-         <section id="mensaje-convertido" class="botones-codificar">
-             <p>El resultado del mensaje es:</p>
+         <section id="mensaje-convertido">
+             <div class="result-message">
+             <h4 class="titulo-nuevo-mensaje">El resultado del mensaje es:</h4>
              <p id="final-message"> </p>
              <br>
+             </div>
          </section>
 
         </main>

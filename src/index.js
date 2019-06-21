@@ -3,8 +3,8 @@
 let btnEncode = document.getElementById('btn-encode');
     btnEncode.addEventListener('click', () => {
         //guardo los valores de los input de mensaje y offset
-        message = document.getElementById('user-message').value;
-        offset = parseInt(document.getElementById('user-offset').value);
+        let message = document.getElementById('user-message').value;
+        let offset = parseInt(document.getElementById('user-offset').value);
 
         //imprimo valor de encode en html
         document.getElementById('final-message').innerHTML = cipher.encode(offset, message);
@@ -16,8 +16,8 @@ let btnEncode = document.getElementById('btn-encode');
 
 let btnDecode = document.getElementById("btn-decode");
     btnDecode.addEventListener('click', () => {
-        message = document.getElementById('user-message').value;
-        offset = document.getElementById('user-offset').value;
+        let message = document.getElementById('user-message').value;
+        let offset = document.getElementById('user-offset').value;
 
         document.getElementById('final-message').innerHTML = cipher.decode(offset,message);
         document.getElementById('final-message').style.display = 'block'

@@ -3,7 +3,7 @@ window.cipher = {
   encode: (offset,message) => {
    //console.log(offset,message);
    //declaro una variable vacía que me guardará el resultado de las letras convertidas, que es string
-    let newMessage = ""; 
+    let newMessage = "";
     // creo un loop para recorrer cada letra/string del array para transformarlo a número ASCII
       for (let i = 0; i < message.length; i++){ 
       //transformo cada letra en su número ASCII, [i] llama a todos los elementos del array
@@ -37,7 +37,7 @@ window.cipher = {
 
         //dejar fijo todo el resto
         else {
-        textEncode = positionAscii;
+        let textEncode = positionAscii;
         newMessage += String.fromCharCode(textEncode);
         }
         
@@ -79,7 +79,7 @@ window.cipher = {
 
             //dejar fijo todo el resto
             else {
-            textDecode = positionAscii;
+            let textDecode = positionAscii;
             newMessage += String.fromCharCode(textDecode);
             }
   
