@@ -77,26 +77,23 @@
                 </div>
                 <form class="form-codificar"> 
                     <label for="user-offset">Número clave</label>
-                    <input type="number" id="user-offset" placeholder="Número">
+                    <input type="number" id="user-offset" placeholder="Ingresa tu número clave">
                     <label for="user-message">Mensaje</label>
-                    <textarea id="user-message" cols="30" rows="7" placeholder="Ingresa tu mensaje" re></textarea>
+                    <textarea id="user-message" cols="30" rows="4" placeholder="Ingresa tu mensaje" re></textarea>
+                    <button id="btn-encode" type="button" class="btn btn-code"><i class="fas fa-lock"></i> Encriptar</button>
+                    <button id="btn-decode" type="button" class="btn btn-code"><i class="fas fa-lock-open"></i> Desencriptar</button>
+                    <div id="mensaje-convertido">
+                        <div class="result-message">
+                            <h4 class="titulo-nuevo-mensaje">El resultado del mensaje es:</h4>
+                            <p id="final-message"> </p>
+                            <br>
+                        </div>
+                    </div>
                     <button type="reset" id="hide-result" class="btn btn-delete"><i class="fas fa-trash-alt"></i> Borrar Texto</button>
                 </form>
             </div>         
-            <div>
-                <button id="btn-encode" class="btn btn-code"><i class="fas fa-lock"></i> Encriptar</button>
-                <button id="btn-decode" class="btn btn-code"><i class="fas fa-lock-open"></i> Desencriptar</button>
-            </div>
-            <br>
         </section>
 
-         <section id="mensaje-convertido">
-             <div class="result-message">
-             <h4 class="titulo-nuevo-mensaje">El resultado del mensaje es:</h4>
-             <p id="final-message"> </p>
-             <br>
-             </div>
-         </section>
 
         </main>
      </div>
