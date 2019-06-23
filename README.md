@@ -1,7 +1,8 @@
-#Proyecto Cipher: "Little Secrets"
+# Proyecto Cipher: "Little Secrets"
+
 Little Secrets es una aplicación pensada para chicas. En ella las niñas pueden contar secretos entre ellas codificando un mensaje o descodificando un mensaje secreto por medio del método “Cifrado Cesar”, como también pueden utilizarla para codificar un mensaje y poder guardarlo en clave en su diario de vida, así nadie podrá leerlo sin tener el código clave (número) con el que se convertirá el mensaje.
 
-##Usuario, fundamentos y objetivos 
+## Usuario, fundamentos y objetivos 
 
 La aplicación está pensada para usuarios mujeres entre 10 y 16 años de edad, la idea surge por la agenda “Pascualina” en donde las niñas que poseían la agenda podían escribir en “código” a través de un abecedario de símbolos esta traía, así los secretos o cosas mas privadas que quisieras escribir en tu agenda quedaban seguras para que nadie las pudieras leer. 
 
@@ -33,7 +34,7 @@ El diseño UI está pensando en los gustos e intereses de los usuarios, tanto en
 
 **1. Flujo de la aplicación:**
 	Se define el flujo principal de la página según a las acciones que realizará el usuario para una crear una navegación fluida y coherente.
-  
+
   ![flujo](https://i.imgur.com/Kpuhirl.png)
 
 **2. Sketch:**
@@ -60,7 +61,8 @@ Versión “real” del prototipo web, en ella se incluyen las imágenes, estilo
 
 ![mockup](https://i.imgur.com/cT55ZaB.png)
 
-##Test con usuarios:
+## Test con usuarios:
+
 El día miércoles 19 de Junio 2019 (décimo día del proyecto /14 en total) se realiza una primera prueba de usabilidad de la aplicación con los elementos principales de estructura y funcionalidad, para lo que se planificó realizar las siguientes preguntas e instrucciones hacia el usuario.
 
 - Explíqueme sobre lo que trata la aplicación después de leer el texto de bienvenida (para qué funciona).
