@@ -28,7 +28,7 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
 
-## Diseño de Interface
+## Método de diseño
 
 El diseño UI está pensando en los gustos e intereses de los usuarios, tanto en colores, estilos de imágenes y de texto, el desarrollo se define a través de los siguientes pasos para llegar al resultado final.
 
