@@ -51,7 +51,7 @@ Se plantea la estructura general de la aplicación, en términos de los elemento
 **3. Wireframe:**
 
 Versión más “refinada” del sketch, en donde se puede visualizar el contenido real de la aplicación, se definen tamaños, bloques de contenido, entre otros.
-![wireframe](https://i.imgur.com/JVqYLsW.png)
+![wireframe](https://i.imgur.com/znNGf9H.png)
 
 **4. Mockup:**
 
@@ -59,7 +59,7 @@ Versión “real” del prototipo web, en ella se incluyen las imágenes, estilo
 
 ![logoytipos](https://i.imgur.com/6yjKXc9.png)
 
-![mockup](https://i.imgur.com/cT55ZaB.png)
+![mockup](https://i.imgur.com/NSZVNav.png)
 
 ## Test con usuarios:
 
