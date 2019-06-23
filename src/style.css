@@ -380,14 +380,30 @@ footer p {
         margin: 0 20px;
     }
 }
+@media screen and (max-width: 728px) {
+    .intro-title {
+        padding: 90px 0 0 75px;
+    }
+}
 
 @media screen and (max-width: 560px) {
     .btn-code {
         width: 200px;
     }
 
+    header nav {
+        margin-bottom: 0px
+    }
     header nav a {
         display: none;
     } 
     
+    #intro {
+        height: 550px;
+    }
+    .intro-title {
+        padding: 120px 0 0 65px;
+    }
+    
+
 }
