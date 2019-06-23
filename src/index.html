@@ -38,9 +38,8 @@
     <!--End Slide-->
     
     <!--Start Content-->
+    <main>
     <div class="contenedor">
-        <main>
-
         <section id="bienvenida">
             <div class="titulo">
             <h3>Bienvenida a Little Secrets</h3>
@@ -49,7 +48,7 @@
             <div class="content">
                 <img class="img-left" src="img/ima1.png">
                 <p>Bienvenidos a <strong>Little Secrets</strong>, una aplicación que te permitirá crear mensajes secretos para enviar a tus amigas.
-                <br><br>En ella podrás escribir un mensaje en clave y también decodificar los mensajes que te envíen, así todo quedará entre las personas que quieras.
+                <br><br>En ella podrás escribir un mensaje en clave como también descifrard los mensajes que te envíen, así todo quedará entre las personas que quieras.
                 <br><br>Para comenzar necesitas un “número clave” el que servirá tanto para enviar como para recibir tu mensaje secreto, este número clave creará un mensaje en código y para que tu amiga lo pueda leer necesita el mismo número para descodificarlo, así que es importante que se pongan de acuerdo cuál es el número que usarán para contar sus secretos.
                 </p>
             </div>
@@ -61,9 +60,9 @@
                 <h4>Aprende a enviar y recibir mensajes secretos</h4>
             </div>
             <div class="content">
-                <p><strong>1.</strong> Ingresa un número que funcionará de "clave" para codificar o decodificar tu mensaje.
-                <br><br><strong>2.</strong> Escribe el mensaje que quieres que sea secreto, o ingresa el mensaje que quieres descodificar.
-                <br><br><strong>3.</strong> Haz click en los botones "Codificar" o "Decodificar" para mostrar el resultado de tu mensaje.
+                <p><strong>1.</strong> Ingresa el número que funcionará de "clave" para cifrar o descifrar tu mensaje.
+                <br><br><strong>2.</strong> Escribe el mensaje que quieres que sea secreto, o ingresa el mensaje que quieres descifrar.
+                <br><br><strong>3.</strong> Haz click en los botones "Cifrar Mensaje" o "Descifrar Mensaje" para mostrar el resultado final.
                 <br><br>¡Y ya está! ya tienes el resultado de tu mensaje secreto, ahora solo queda copiarlo para enviárselo a tus amigas.</p>
                 <img class="img-right" src="img/ima2.png">
             </div>
@@ -72,7 +71,7 @@
         <section id="codificar">
             <div>
                 <div class="titulo">
-                    <h3>Comenzemos a contar secretos</h3>
+                    <h3>Comencemos a contar secretos</h3>
                     <h4>Cifra o descifra un mensaje</h4>
                 </div>
                 <form class="form-codificar"> 
@@ -82,21 +81,20 @@
                     <textarea id="user-message" cols="30" rows="4" placeholder="Ingresa tu mensaje a cifrar o descifrar"></textarea>
                     <button id="btn-encode" type="button" class="btn btn-code"><i class="fas fa-lock"></i> Cifrar mensaje</button>
                     <button id="btn-decode" type="button" class="btn btn-code"><i class="fas fa-lock-open"></i> Descifrar mensaje</button>
-                    <div id="mensaje-convertido">
+                    
                         <div class="result-message">
-                            <h4 class="titulo-nuevo-mensaje">El resultado del mensaje es:</h4>
-                            <p id="final-message"> </p>
+                            <h4 class="new-message-title">El resultado del mensaje es:</h4>
+                            <textarea type='text' id="final-message"></textarea>
                             <br>
                         </div>
-                    </div>
-                    <button type="reset" id="hide-result" class="btn btn-delete"><i class="fas fa-trash-alt"></i> Borrar Texto</button>
+                    
+                    <button type="button" id="btn-copytext" class="btn btn-copy"><span class="tooltiptext" id="toolTip"></span><i class="far fa-copy"></i> Copiar texto</button>    
+                    <button type="reset" id="hide-result" class="btn btn-delete"><i class="fas fa-trash-alt"></i> Borrar</button>
                 </form>
             </div>         
         </section>
-
-
-        </main>
      </div>
+    </main>
     <!--End Content-->
 
     <!--Start Footer-->

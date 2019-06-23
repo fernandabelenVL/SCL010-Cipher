@@ -13,7 +13,6 @@ let btnEncode = document.getElementById('btn-encode');
 
     });
 
-
 let btnDecode = document.getElementById("btn-decode");
     btnDecode.addEventListener('click', () => {
         let message = document.getElementById('user-message').value;
@@ -24,11 +23,18 @@ let btnDecode = document.getElementById("btn-decode");
 
     });
 
-
 //hacer que el botón limpiar haga algo
-//document.getElementById("btn-clean").addEventListener('click'), ()=> {
 let btnDelete = document.getElementById('hide-result');
     btnDelete.addEventListener('click', () => {
         document.getElementById('final-message').style.display = 'none'
     });
+
+// botón copiar texto
+let btnCopy = document.getElementById('btn-copytext');
+    btnCopy.addEventListener('click', () => {
+        let copyText = document.getElementById('final-message');
+        copyText.select();
+        document.execCommand("copy"); 
+    })
+
 

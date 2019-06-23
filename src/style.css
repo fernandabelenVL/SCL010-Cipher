@@ -261,16 +261,33 @@ textarea {
 
 .btn-delete {
     max-width: 300px;
-    width: 200px;
     margin: 0;
     background: #f5f5f5;
     border: 1px solid #ccc;
     font-weight: 100;
+    flex-flow: row;
 }
+
 .btn-delete:hover{
     background: #868686;
     color: #fff;
 } 
+
+.btn-copy {
+    max-width: 300px;
+    margin: 0;
+    background: #35d3cb;
+    border: 1px solid #35d3cb;
+    color: #fff;
+    font-weight: 400;
+    flex-flow: row;
+}
+
+.btn-copy:hover {
+    background: #15a79f;
+    border: 1px solid #15a79f;
+}
+
 
 .btn-code {
     width: 250px;
@@ -296,10 +313,24 @@ textarea {
     margin-bottom: 10px;
 }
 
-.titulo-nuevo-mensaje {
+.new-message-title {
     margin: 20px 10px;
     color: #402888;
     font-weight: 400;
+}
+
+#final-message{
+    text-align: center;
+    border: none;
+    margin-bottom: 0px;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.result-message textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 50px;
 }
 
 /*Footer-----------------------------------------*/
@@ -387,8 +418,15 @@ footer p {
 }
 
 @media screen and (max-width: 560px) {
+
     .btn-code {
-        width: 200px;
+        width: auto;
+        padding: 12px 15px;
+
+    }
+    .btn-code:hover{
+        width: auto;
+        margin-bottom: 11px;
     }
 
     header nav {
